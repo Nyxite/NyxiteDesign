@@ -1,0 +1,525 @@
+{
+  "$schema": "https://design-tokens.org/format",
+  "name": "Nyxite",
+  "version": "1.1.0",
+  "description": "Design tokens for Nyxite, a unified document/slides/sheets editor. Platform-agnostic; consumable from web (CSS vars), C#/.NET (Color.FromArgb hex), Android (colors.xml / Compose Color(0xFF...)). Colors are sRGB hex strings.",
+  "meta": {
+    "accentBrand": "Deep purple (#4C1D95) used as the primary frame, outline and selection color.",
+    "themes": ["light", "dark"],
+    "fonts": {
+      "ui": "Manrope",
+      "serif": "Source Serif 4"
+    }
+  },
+
+  "color": {
+    "palette": {
+      "purple": {
+        "50":  "#F4F1FB",
+        "100": "#ECE6F8",
+        "200": "#D8CCF0",
+        "300": "#BCA6E6",
+        "400": "#9B7BD6",
+        "500": "#7C3AED",
+        "600": "#6D28D9",
+        "700": "#5B21B6",
+        "800": "#4C1D95",
+        "900": "#3B1672",
+        "950": "#250E47"
+      },
+      "neutral": {
+        "0":   "#FFFFFF",
+        "50":  "#F6F4FB",
+        "100": "#ECE8F5",
+        "200": "#E5E0EE",
+        "300": "#D5CEE3",
+        "400": "#9D97AE",
+        "500": "#6A6480",
+        "600": "#4A4560",
+        "700": "#322B47",
+        "800": "#221B33",
+        "900": "#14101D",
+        "950": "#0E0A17"
+      },
+      "accentDarkMode": "#8B5CF6",
+      "accentDarkModeBright": "#A78BFA"
+    },
+
+    "semantic": {
+      "light": {
+        "appBackground":   "#ECE8F5",
+        "chrome":          "#FFFFFF",
+        "chromeAlt":       "#F6F4FB",
+        "canvasArea":      "#E5E0EF",
+        "page":            "#FFFFFF",
+        "textPrimary":     "#221B33",
+        "textSecondary":   "#6A6480",
+        "textFaint":       "#9D97AE",
+        "border":          "#E5E0EE",
+        "borderStrong":    "#D5CEE3",
+        "accent":          "#4C1D95",
+        "accentHover":     "#6D28D9",
+        "accentSoft":      "#ECE6F8",
+        "onAccent":        "#FFFFFF",
+        "rail":            "#2A2140",
+        "railText":        "#BBB3D0",
+        "gridLine":        "#E7E2F0",
+        "cellHeader":      "#F4F1FA",
+        "focusRing":       "#4C1D95"
+      },
+      "dark": {
+        "appBackground":   "#0E0A17",
+        "chrome":          "#191322",
+        "chromeAlt":       "#14101D",
+        "canvasArea":      "#100B1A",
+        "page":            "#221B30",
+        "textPrimary":     "#ECE8F5",
+        "textSecondary":   "#A39DB7",
+        "textFaint":       "#6E6882",
+        "border":          "#2A2339",
+        "borderStrong":    "#382F4D",
+        "accent":          "#8B5CF6",
+        "accentHover":     "#A78BFA",
+        "accentSoft":      "#251C3A",
+        "onAccent":        "#FFFFFF",
+        "rail":            "#0A0712",
+        "railText":        "#9E97B2",
+        "gridLine":        "#272036",
+        "cellHeader":      "#1C1628",
+        "focusRing":       "#8B5CF6"
+      }
+    },
+
+    "status": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "danger":  "#E11D48",
+      "info":    "#6D28D9"
+    },
+
+    "avatar": ["#10B981", "#F59E0B", "#4C1D95", "#0EA5E9", "#E11D48", "#6D28D9"]
+  },
+
+  "typography": {
+    "fontFamily": {
+      "ui":    "Manrope, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      "serif": "'Source Serif 4', Georgia, serif"
+    },
+    "fontWeight": {
+      "regular":  400,
+      "medium":   500,
+      "semibold": 600,
+      "bold":     700,
+      "extrabold": 800
+    },
+    "scale": {
+      "label":      { "size": 10, "lineHeight": 14, "weight": 600, "letterSpacing": 0.4, "case": "uppercase" },
+      "caption":    { "size": 11, "lineHeight": 16, "weight": 500, "letterSpacing": 0.2 },
+      "bodySmall":  { "size": 12, "lineHeight": 18, "weight": 400, "letterSpacing": 0 },
+      "body":       { "size": 14, "lineHeight": 22, "weight": 400, "letterSpacing": 0 },
+      "bodyStrong": { "size": 14, "lineHeight": 22, "weight": 600, "letterSpacing": 0 },
+      "title":      { "size": 15, "lineHeight": 22, "weight": 700, "letterSpacing": -0.15 },
+      "heading":    { "size": 20, "lineHeight": 28, "weight": 600, "letterSpacing": -0.2, "family": "serif" },
+      "display":    { "size": 28, "lineHeight": 34, "weight": 600, "letterSpacing": -0.4, "family": "serif" },
+      "docBody":    { "size": 18, "lineHeight": 31, "weight": 400, "letterSpacing": 0, "family": "serif" }
+    }
+  },
+
+  "spacing": {
+    "unit": 4,
+    "scale": { "0": 0, "1": 4, "2": 8, "3": 12, "4": 16, "5": 20, "6": 24, "8": 32, "10": 40, "12": 48, "16": 64 }
+  },
+
+  "radius": {
+    "xs": 4,
+    "sm": 6,
+    "md": 7,
+    "lg": 9,
+    "xl": 11,
+    "2xl": 14,
+    "pill": 999,
+    "page": 3
+  },
+
+  "borderWidth": {
+    "hairline": 1,
+    "regular": 1.5,
+    "thick": 2,
+    "focus": 2
+  },
+
+  "shadow": {
+    "light": {
+      "card":     "0 6px 24px rgba(44,22,80,0.10), 0 1px 3px rgba(44,22,80,0.08)",
+      "popover":  "0 12px 36px rgba(44,22,80,0.16), 0 2px 6px rgba(44,22,80,0.10)",
+      "focusRing": "0 0 0 2px #4C1D95"
+    },
+    "dark": {
+      "card":     "0 8px 30px rgba(0,0,0,0.50), 0 1px 3px rgba(0,0,0,0.40)",
+      "popover":  "0 16px 44px rgba(0,0,0,0.60), 0 2px 8px rgba(0,0,0,0.50)",
+      "focusRing": "0 0 0 2px #8B5CF6"
+    }
+  },
+
+  "motion": {
+    "duration": { "fast": 120, "base": 150, "slow": 240 },
+    "easing": { "standard": "cubic-bezier(0.4, 0, 0.2, 1)", "decelerate": "cubic-bezier(0, 0, 0.2, 1)" }
+  },
+
+  "components": {
+    "button": {
+      "height": 34,
+      "paddingX": 15,
+      "radius": 9,
+      "fontSize": 13,
+      "fontWeight": 600,
+      "gap": 7,
+      "variants": {
+        "primary":   { "bg": "accent", "fg": "onAccent", "hoverBg": "accentHover" },
+        "secondary": { "bg": "chromeAlt", "fg": "textSecondary", "border": "border", "hoverFg": "accent", "hoverBorder": "accent" },
+        "ghost":     { "bg": "transparent", "fg": "textSecondary", "hoverBg": "accentSoft", "hoverFg": "accent" }
+      }
+    },
+    "iconButton": {
+      "size": 34,
+      "radius": 9,
+      "iconSize": 17,
+      "hoverBg": "accentSoft",
+      "hoverFg": "accent"
+    },
+    "toolbarButton": {
+      "size": 28,
+      "radius": 6,
+      "iconSize": 18,
+      "activeBg": "accentSoft",
+      "activeFg": "accent"
+    },
+    "segmentedControl": {
+      "height": 33,
+      "radius": 9,
+      "padding": 3,
+      "bg": "chromeAlt",
+      "border": "border",
+      "segment": { "width": 32, "height": 27, "radius": 7, "activeBg": "accentSoft", "activeFg": "accent" }
+    },
+    "input": {
+      "height": 34,
+      "paddingX": 12,
+      "radius": 9,
+      "bg": "chromeAlt",
+      "border": "border",
+      "focusBorder": "accent",
+      "fontSize": 13,
+      "placeholderColor": "textFaint"
+    },
+    "dropdown": {
+      "height": 28,
+      "paddingX": 9,
+      "radius": 7,
+      "bg": "chromeAlt",
+      "border": "border",
+      "fontSize": 12.5,
+      "caretSize": 13
+    },
+    "chip": {
+      "height": 26,
+      "paddingX": 10,
+      "radius": 999,
+      "fontSize": 12,
+      "bg": "accentSoft",
+      "fg": "accent"
+    },
+    "badge": {
+      "height": 18,
+      "paddingX": 7,
+      "radius": 999,
+      "fontSize": 11,
+      "fontWeight": 700
+    },
+    "avatar": {
+      "size": 30,
+      "radius": 999,
+      "fontSize": 11,
+      "fontWeight": 700,
+      "ring": "2px solid chrome",
+      "overlap": -9
+    },
+    "sidebarItem": {
+      "height": 36,
+      "paddingX": 11,
+      "radius": 9,
+      "gap": 10,
+      "fontSize": 13.5,
+      "activeBg": "accentSoft",
+      "activeFg": "accent",
+      "activeIndicator": { "width": 3, "color": "accent", "radius": 3 },
+      "hoverBg": "chromeAlt"
+    },
+    "railButton": {
+      "width": 44,
+      "height": 40,
+      "radius": 11,
+      "iconSize": 21,
+      "activeBg": "rgba(255,255,255,0.16)",
+      "activeFg": "#FFFFFF",
+      "inactiveFg": "railText"
+    },
+    "card": {
+      "radius": 14,
+      "bg": "chrome",
+      "border": "border",
+      "shadow": "card",
+      "padding": 20
+    },
+    "toggle": {
+      "width": 38,
+      "height": 22,
+      "radius": 999,
+      "knob": 16,
+      "onBg": "accent",
+      "offBg": "borderStrong"
+    },
+    "tab": {
+      "height": 36,
+      "paddingX": 14,
+      "fontSize": 13,
+      "activeFg": "accent",
+      "activeIndicator": { "height": 2, "color": "accent" },
+      "inactiveFg": "textSecondary"
+    },
+    "statusBar": {
+      "height": 30,
+      "bg": "chromeAlt",
+      "border": "border",
+      "fontSize": 12,
+      "fg": "textSecondary"
+    },
+    "topBar": { "height": 54, "bg": "chrome", "border": "border", "paddingX": 16 },
+    "rail":   { "width": 58, "bg": "rail", "paddingY": 12 },
+
+    "checkbox": {
+      "size": 20,
+      "radius": 6,
+      "borderWidth": 2,
+      "uncheckedBorder": "borderStrong",
+      "checkedBg": "accent",
+      "checkColor": "onAccent",
+      "gap": 11
+    },
+    "radio": {
+      "size": 20,
+      "borderWidth": 2,
+      "uncheckedBorder": "borderStrong",
+      "checkedBorder": "accent",
+      "dot": 9,
+      "dotColor": "accent",
+      "gap": 11
+    },
+    "slider": {
+      "trackHeight": 6,
+      "trackRadius": 3,
+      "trackBg": "borderStrong",
+      "fillBg": "accent",
+      "thumb": 16,
+      "thumbBg": "#FFFFFF",
+      "thumbBorder": "accent",
+      "thumbBorderWidth": 2
+    },
+    "stepper": {
+      "height": 34,
+      "radius": 9,
+      "bg": "chromeAlt",
+      "border": "border",
+      "buttonSize": 34,
+      "valueWidth": 46,
+      "hoverBg": "accentSoft",
+      "hoverFg": "accent"
+    },
+    "tooltip": {
+      "bg": "rail",
+      "fg": "#FFFFFF",
+      "fontSize": 12,
+      "paddingX": 10,
+      "paddingY": 6,
+      "radius": 7,
+      "shadow": "card",
+      "arrow": 5
+    },
+    "progressLinear": {
+      "height": 8,
+      "radius": 4,
+      "trackBg": "borderStrong",
+      "fillBg": "accent"
+    },
+    "progressCircular": {
+      "size": 34,
+      "strokeWidth": 4,
+      "trackColor": "borderStrong",
+      "fillColor": "accent",
+      "lineCap": "round"
+    },
+    "skeleton": {
+      "bg": "chromeAlt",
+      "lineHeight": 9,
+      "lineRadius": 5
+    },
+    "kbd": {
+      "fontSize": 11,
+      "fontWeight": 600,
+      "paddingX": 7,
+      "paddingY": 2,
+      "radius": 5,
+      "bg": "chromeAlt",
+      "border": "borderStrong",
+      "borderBottomWidth": 2,
+      "fg": "textPrimary"
+    },
+    "toast": {
+      "radius": 11,
+      "bg": "chrome",
+      "border": "border",
+      "shadow": "card",
+      "paddingX": 14,
+      "paddingY": 12,
+      "gap": 12,
+      "iconBox": { "size": 30, "radius": 8 },
+      "accentStripWidth": 3,
+      "variants": {
+        "success": { "iconBg": "rgba(16,185,129,0.14)", "iconFg": "success" },
+        "info":    { "stripColor": "accent", "iconBg": "accentSoft", "iconFg": "accent" },
+        "error":   { "stripColor": "danger", "iconBg": "rgba(225,29,72,0.12)", "iconFg": "danger" }
+      }
+    },
+    "commentThread": {
+      "radius": 12,
+      "border": "border",
+      "padding": 16,
+      "avatarSize": 30,
+      "gap": 11,
+      "authorFontSize": 13,
+      "bodyFontSize": 13,
+      "metaColor": "textFaint"
+    },
+    "presence": {
+      "avatarSize": 32,
+      "statusDot": { "size": 11, "online": "success", "ringColor": "chrome", "ringWidth": 2 }
+    },
+    "table": {
+      "radius": 11,
+      "border": "border",
+      "headerBg": "chromeAlt",
+      "headerFontSize": 11,
+      "headerCase": "uppercase",
+      "headerColor": "textFaint",
+      "rowFontSize": 13,
+      "rowPaddingX": 16,
+      "rowPaddingY": 12,
+      "rowHoverBg": "chromeAlt",
+      "rowBorder": "border"
+    },
+    "commandPalette": {
+      "radius": 12,
+      "border": "borderStrong",
+      "shadow": "popover",
+      "bg": "chrome",
+      "inputHeight": 44,
+      "itemHeight": 36,
+      "itemRadius": 8,
+      "activeBg": "accentSoft",
+      "activeFg": "accent",
+      "groupLabelColor": "textFaint"
+    },
+    "dialog": {
+      "radius": 14,
+      "border": "borderStrong",
+      "shadow": "popover",
+      "bg": "chrome",
+      "titleFontSize": 15,
+      "paddingX": 22,
+      "footerBg": "chromeAlt",
+      "footerBorder": "border"
+    },
+    "emptyState": {
+      "iconBox": { "size": 56, "radius": 15, "bg": "accentSoft", "fg": "accent" },
+      "borderStyle": "dashed",
+      "border": "borderStrong",
+      "radius": 12,
+      "titleFontSize": 15,
+      "bodyColor": "textFaint"
+    },
+    "fab": {
+      "size": 48,
+      "radius": 15,
+      "bg": "accent",
+      "fg": "onAccent",
+      "iconSize": 22,
+      "shadow": "0 6px 18px rgba(76,29,149,0.40)"
+    },
+    "bottomTabBar": {
+      "height": 58,
+      "bg": "chrome",
+      "border": "border",
+      "iconSize": 21,
+      "labelFontSize": 10,
+      "activeFg": "accent",
+      "inactiveFg": "textFaint"
+    },
+    "mobileTopBar": {
+      "height": 50,
+      "bg": "chrome",
+      "border": "border",
+      "iconButtonSize": 34,
+      "iconButtonRadius": 9,
+      "titleFontSize": 13.5,
+      "subtitleFontSize": 10
+    },
+    "drawer": {
+      "width": 248,
+      "bg": "chrome",
+      "border": "border",
+      "shadow": "popover"
+    },
+    "breadcrumb": {
+      "fontSize": 13,
+      "gap": 7,
+      "separatorColor": "textFaint",
+      "linkColor": "textSecondary",
+      "linkHoverColor": "accent",
+      "currentColor": "textPrimary",
+      "currentWeight": 600
+    },
+    "statusDot": {
+      "size": 7,
+      "radius": 999,
+      "color": "accent"
+    },
+    "formatStrip": {
+      "height": 46,
+      "bg": "chrome",
+      "border": "border",
+      "buttonSize": 32,
+      "buttonRadius": 8,
+      "activeBg": "accentSoft",
+      "activeFg": "accent"
+    }
+  },
+
+  "breakpoints": {
+    "mobile":  { "max": 767, "toolbars": ["slim", "minimal"], "notes": "Bottom tab bar switches doc type; hamburger drawer; format strip or minimal pill above tab bar; FAB for inserts; full-bleed canvas." },
+    "tablet":  { "min": 768, "max": 1023, "toolbars": ["slim", "minimal"], "notes": "Rail pinned; sidebar becomes a drawer; search collapses to an icon." },
+    "desktop": { "min": 1024, "toolbars": ["classic", "slim", "minimal"], "notes": "Rail + sidebar both pinned; full toolbar set; inline search and collaborator avatars." }
+  },
+
+  "toolbarModes": {
+    "classic": { "height": 88, "desc": "Grouped ribbon with labeled sections (Font, Paragraph, Styles/Slide/Number, Insert). Desktop only." },
+    "slim":    { "height": 44, "desc": "Single scrolling row of the most-used controls." },
+    "minimal": { "height": 48, "desc": "Centered floating pill with core formatting only." }
+  },
+
+  "platformHints": {
+    "css": "Map semantic.<theme>.* to :root and [data-theme=dark] custom properties (e.g. --accent).",
+    "android": "Put palette + semantic.light into res/values/colors.xml and semantic.dark into res/values-night/colors.xml. Hex maps directly; prefix with #FF for full opacity in Compose Color(0xFF4C1D95).",
+    "csharp": "Use Color.FromArgb on the hex (strip #). dp/sp values in spacing/typography are device-independent; multiply by DPI scale as needed.",
+    "notesOnUnits": "All size/spacing values are in density-independent pixels (dp on Android, point-like on web). Font sizes are sp-equivalent. letterSpacing is in px at the listed size; for Android convert to em by dividing by fontSize."
+  }
+}

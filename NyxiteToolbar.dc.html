@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  :root{--chrome:#FFFFFF;--chrome-2:#F6F4FB;--text:#221B33;--soft:#6A6480;--faint:#9D97AE;--border:#E5E0EE;--border-2:#D5CEE3;--accent:#4C1D95;--accent-2:#6D28D9;--accent-soft:#ECE6F8;--shadow:0 6px 24px rgba(44,22,80,.10),0 1px 3px rgba(44,22,80,.08);}
+  [data-theme="dark"]{--chrome:#191322;--chrome-2:#14101D;--text:#ECE8F5;--soft:#A39DB7;--faint:#6E6882;--border:#2A2339;--border-2:#382F4D;--accent:#8B5CF6;--accent-2:#A78BFA;--accent-soft:#251C3A;--shadow:0 8px 30px rgba(0,0,0,.5),0 1px 3px rgba(0,0,0,.4);}
+  .nyx-tb-ic{display:flex;align-items:center;justify-content:center;border-radius:7px;border:none;background:transparent;color:var(--soft);cursor:pointer;flex:none;}
+  .nyx-tb-ch{display:flex;align-items:center;justify-content:center;border-radius:7px;color:var(--text);flex:none;}
+</style>
+</helmet>
+
+<div style="flex:none;background:var(--chrome);border-bottom:1px solid var(--border);font-family:'Manrope',system-ui,sans-serif;">
+
+  <!-- CLASSIC RIBBON (desktop only) -->
+  <sc-if value="{{ isClassic }}" hint-placeholder-val="{{ true }}">
+  <div style="display:flex;align-items:stretch;height:88px;padding:8px 6px 0 10px;overflow:hidden;">
+    <div style="display:flex;flex-direction:column;padding:0 10px;border-right:1px solid var(--border);">
+      <div style="display:flex;gap:6px;flex:1;align-items:center;">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;height:28px;padding:0 9px;border:1px solid var(--border);border-radius:7px;background:var(--chrome-2);font-size:12.5px;min-width:134px;">Source Serif <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:6px;height:28px;padding:0 8px;border:1px solid var(--border);border-radius:7px;background:var(--chrome-2);font-size:12.5px;width:54px;">12 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></div>
+      </div>
+      <div style="display:flex;gap:1px;flex:1;align-items:center;">
+        <div class="nyx-tb-ch" style="width:28px;height:28px;font-weight:800;font-size:14px;">B</div>
+        <div class="nyx-tb-ch" style="width:28px;height:28px;font-style:italic;font-family:'Source Serif 4',serif;font-size:15px;">I</div>
+        <div class="nyx-tb-ch" style="width:28px;height:28px;text-decoration:underline;font-size:14px;">U</div>
+        <div class="nyx-tb-ch" style="width:28px;height:28px;text-decoration:line-through;font-size:14px;">S</div>
+      </div>
+      <div style="font-size:10px;color:var(--faint);text-align:center;padding:4px 0 6px;">Font</div>
+    </div>
+    <div style="display:flex;flex-direction:column;padding:0 10px;border-right:1px solid var(--border);">
+      <div style="display:flex;gap:1px;flex:1;align-items:center;">
+        <div class="nyx-tb-ic" style="width:28px;height:28px;background:var(--accent-soft);color:var(--accent);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h12M3 18h15"/></svg></div>
+        <div class="nyx-tb-ic" style="width:28px;height:28px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M6 12h12M5 18h14"/></svg></div>
+        <div class="nyx-tb-ic" style="width:28px;height:28px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M9 12h12M6 18h15"/></svg></div>
+      </div>
+      <div style="display:flex;gap:1px;flex:1;align-items:center;">
+        <div class="nyx-tb-ic" style="width:28px;height:28px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="1.1" fill="currentColor" stroke="none"/><circle cx="3.5" cy="12" r="1.1" fill="currentColor" stroke="none"/><circle cx="3.5" cy="18" r="1.1" fill="currentColor" stroke="none"/></svg></div>
+        <div class="nyx-tb-ic" style="width:28px;height:28px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 5.5h1.5V9M2.8 9h1.9"/></svg></div>
+      </div>
+      <div style="font-size:10px;color:var(--faint);text-align:center;padding:4px 0 6px;">Paragraph</div>
+    </div>
+
+    <sc-if value="{{ isDoc }}" hint-placeholder-val="{{ true }}">
+    <div style="display:flex;flex-direction:column;padding:0 10px;border-right:1px solid var(--border);">
+      <div style="display:flex;gap:6px;flex:1;align-items:center;">
+        <div style="height:50px;min-width:74px;border:1px solid var(--border);border-radius:8px;background:var(--chrome-2);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text);"><span style="font-family:'Source Serif 4',serif;font-size:15px;">Normal</span><span style="font-size:9px;color:var(--faint);margin-top:2px;">Body</span></div>
+        <div style="height:50px;min-width:74px;border:1px solid var(--border);border-radius:8px;background:var(--chrome-2);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text);"><span style="font-family:'Source Serif 4',serif;font-size:19px;font-weight:600;">Title</span><span style="font-size:9px;color:var(--faint);margin-top:2px;">Heading</span></div>
+      </div>
+      <div style="font-size:10px;color:var(--faint);text-align:center;padding:4px 0 6px;">Styles</div>
+    </div>
+    </sc-if>
+    <sc-if value="{{ isSlides }}" hint-placeholder-val="{{ true }}">
+    <div style="display:flex;flex-direction:column;padding:0 10px;border-right:1px solid var(--border);">
+      <div style="display:flex;gap:6px;flex:1;align-items:center;">
+        <div class="nyx-tb-ic" style="flex-direction:column;gap:4px;width:50px;height:54px;color:var(--soft);font-size:10px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="9" rx="1.5"/><path d="M19 14v6M16 17h6"/></svg>New slide</div>
+        <div class="nyx-tb-ic" style="flex-direction:column;gap:4px;width:50px;height:54px;color:var(--soft);font-size:10px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg>Layout</div>
+      </div>
+      <div style="font-size:10px;color:var(--faint);text-align:center;padding:4px 0 6px;">Slide</div>
+    </div>
+    </sc-if>
+    <sc-if value="{{ isSheet }}" hint-placeholder-val="{{ true }}">
+    <div style="display:flex;flex-direction:column;padding:0 10px;border-right:1px solid var(--border);">
+      <div style="display:flex;flex-direction:column;gap:5px;flex:1;justify-content:center;">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;height:28px;padding:0 9px;border:1px solid var(--border);border-radius:7px;background:var(--chrome-2);font-size:12.5px;min-width:110px;">General <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></div>
+        <div style="display:flex;gap:1px;">
+          <div class="nyx-tb-ch" style="width:28px;height:28px;font-size:14px;font-weight:600;">€</div>
+          <div class="nyx-tb-ch" style="width:28px;height:28px;font-size:14px;font-weight:600;">%</div>
+          <div class="nyx-tb-ch" style="width:28px;height:28px;font-size:13px;font-weight:700;">Σ</div>
+        </div>
+      </div>
+      <div style="font-size:10px;color:var(--faint);text-align:center;padding:4px 0 6px;">Number</div>
+    </div>
+    </sc-if>
+
+    <div style="display:flex;flex-direction:column;padding:0 10px;">
+      <div style="display:flex;gap:1px;flex:1;align-items:center;">
+        <div class="nyx-tb-ic" style="width:30px;height:30px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.8"/><path d="M21 16l-5-5L5 20"/></svg></div>
+        <div class="nyx-tb-ic" style="width:30px;height:30px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg></div>
+        <div class="nyx-tb-ic" style="width:30px;height:30px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg></div>
+      </div>
+      <div style="font-size:10px;color:var(--faint);text-align:center;padding:4px 0 6px;">Insert</div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- SLIM -->
+  <sc-if value="{{ isSlim }}" hint-placeholder-val="{{ true }}">
+  <div style="display:flex;align-items:center;gap:2px;height:44px;padding:0 10px;overflow:hidden;">
+    <div class="nyx-tb-ic" style="width:30px;height:30px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14L4 9l5-5"/><path d="M4 9h11a6 6 0 0 1 0 12h-4"/></svg></div>
+    <div style="width:1px;height:20px;background:var(--border);margin:0 5px;flex:none;"></div>
+    <sc-if value="{{ isSheet }}" hint-placeholder-val="{{ true }}"><div style="display:flex;align-items:center;justify-content:space-between;gap:7px;height:30px;padding:0 9px;border:1px solid var(--border);border-radius:7px;background:var(--chrome-2);font-size:12px;flex:none;min-width:96px;">General <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></div></sc-if>
+    <sc-if value="{{ notSheet }}" hint-placeholder-val="{{ true }}"><div style="display:flex;align-items:center;justify-content:space-between;gap:7px;height:30px;padding:0 9px;border:1px solid var(--border);border-radius:7px;background:var(--chrome-2);font-size:12px;flex:none;min-width:116px;">Source Serif <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></div></sc-if>
+    <div style="width:1px;height:20px;background:var(--border);margin:0 5px;flex:none;"></div>
+    <div class="nyx-tb-ch" style="width:30px;height:30px;font-weight:800;font-size:14px;">B</div>
+    <div class="nyx-tb-ch" style="width:30px;height:30px;font-style:italic;font-family:'Source Serif 4',serif;font-size:15px;">I</div>
+    <div class="nyx-tb-ch" style="width:30px;height:30px;text-decoration:underline;font-size:14px;">U</div>
+    <div style="width:1px;height:20px;background:var(--border);margin:0 5px;flex:none;"></div>
+    <div class="nyx-tb-ic" style="width:30px;height:30px;background:var(--accent-soft);color:var(--accent);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h12M3 18h15"/></svg></div>
+    <div class="nyx-tb-ic" style="width:30px;height:30px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.8"/><path d="M21 16l-5-5L5 20"/></svg></div>
+    <div style="flex:1;"></div>
+    <div class="nyx-tb-ic" style="width:30px;height:30px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.3L3 21l1.2-3.6A8.5 8.5 0 1 1 21 11.5z"/></svg></div>
+  </div>
+  </sc-if>
+
+  <!-- MINIMAL -->
+  <sc-if value="{{ isMinimal }}" hint-placeholder-val="{{ true }}">
+  <div style="height:48px;display:flex;align-items:center;justify-content:center;">
+    <div style="display:flex;align-items:center;gap:2px;background:var(--chrome);border:1px solid var(--border-2);border-radius:11px;box-shadow:var(--shadow);padding:5px;">
+      <div class="nyx-tb-ch" style="width:30px;height:30px;font-weight:800;font-size:14px;">B</div>
+      <div class="nyx-tb-ch" style="width:30px;height:30px;font-style:italic;font-family:'Source Serif 4',serif;font-size:15px;">I</div>
+      <div class="nyx-tb-ch" style="width:30px;height:30px;text-decoration:underline;font-size:14px;">U</div>
+      <div style="width:1px;height:20px;background:var(--border);margin:0 4px;"></div>
+      <div class="nyx-tb-ic" style="width:30px;height:30px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h12M3 18h15"/></svg></div>
+      <div class="nyx-tb-ic" style="width:30px;height:30px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.3L3 21l1.2-3.6A8.5 8.5 0 1 1 21 11.5z"/></svg></div>
+    </div>
+  </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:760,&quot;height&quot;:90},&quot;variant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;classic&quot;,&quot;slim&quot;,&quot;minimal&quot;],&quot;default&quot;:&quot;classic&quot;,&quot;tsType&quot;:&quot;'classic'|'slim'|'minimal'&quot;},&quot;docType&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;doc&quot;,&quot;slides&quot;,&quot;sheet&quot;],&quot;default&quot;:&quot;doc&quot;,&quot;tsType&quot;:&quot;'doc'|'slides'|'sheet'&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const p = this.props || {};
+    const variant = p.variant || 'classic';
+    const docType = p.docType || 'doc';
+    return {
+      isClassic: variant === 'classic', isSlim: variant === 'slim', isMinimal: variant === 'minimal',
+      isDoc: docType === 'doc', isSlides: docType === 'slides', isSheet: docType === 'sheet', notSheet: docType !== 'sheet',
+    };
+  }
+}
+</script>
+</body>
+</html>
