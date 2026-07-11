@@ -1,0 +1,11 @@
+{
+  "name": "nyxite-design",
+  "version": "1.1.1",
+  "private": true,
+  "description": "Nyxite design tokens (source of truth) + DS-3 token-generation pipeline.",
+  "type": "module",
+  "scripts": {
+    "tokens:build": "node tools/generate-tokens.mjs",
+    "tokens:check": "node tools/generate-tokens.mjs --check"
+  }
+}

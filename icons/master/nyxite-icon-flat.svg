@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Nyxite">
+  <defs>
+    <!-- Subtle tile background: dark indigo, light from top-left -->
+    <linearGradient id="tile" gradientUnits="userSpaceOnUse" x1="60" y1="40" x2="452" y2="472">
+      <stop offset="0" stop-color="#211A30"/>
+      <stop offset="1" stop-color="#100C18"/>
+    </linearGradient>
+    <!-- Lit diagonal plane -->
+    <linearGradient id="lit" gradientUnits="userSpaceOnUse" x1="150" y1="150" x2="360" y2="366">
+      <stop offset="0" stop-color="#8072A6"/>
+      <stop offset="1" stop-color="#5B4D82"/>
+    </linearGradient>
+    <!-- Left leg (mid plane) -->
+    <linearGradient id="mid" gradientUnits="userSpaceOnUse" x1="146" y1="150" x2="206" y2="366">
+      <stop offset="0" stop-color="#5F5286"/>
+      <stop offset="1" stop-color="#453A64"/>
+    </linearGradient>
+    <!-- Right leg (dark plane) -->
+    <linearGradient id="dark" gradientUnits="userSpaceOnUse" x1="306" y1="150" x2="366" y2="366">
+      <stop offset="0" stop-color="#463B64"/>
+      <stop offset="1" stop-color="#2E2648"/>
+    </linearGradient>
+  </defs>
+
+  <!-- App-icon tile -->
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#tile)"/>
+
+  <!-- Faceted "N": three merged planes, legs first, lit diagonal on top -->
+  <polygon points="306,150 366,150 366,366 306,366" fill="url(#dark)"/>
+  <polygon points="146,150 206,150 206,366 146,366" fill="url(#mid)"/>
+  <polygon points="146,150 206,150 366,366 306,366" fill="url(#lit)"/>
+  <!-- Fold highlight down the diagonal's leading edge (low-poly hint) -->
+  <polygon points="146,150 176,150 336,366 306,366" fill="#8E80B4" opacity="0.35"/>
+</svg>
