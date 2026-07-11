@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="150 150 212 212" width="212" height="212" role="img" aria-label="Nyxite">
+  <!-- Standalone low-poly faceted "N" glyph (no tile) for wordmark / inline use. -->
+  <defs>
+    <clipPath id="ng">
+      <polygon points="150,168 168,150 212,150 300,274 300,168 318,150 344,150 362,168 362,344 344,362 300,362 212,238 212,344 194,362 168,362 150,344"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#ng)">
+    <polygon points="150,150 181,150 181,362 150,362" fill="#7A6CA0"/>
+    <polygon points="181,150 212,150 212,362 181,362" fill="#645688"/>
+    <polygon points="300,150 331,150 331,362 300,362" fill="#544778"/>
+    <polygon points="331,150 362,150 362,362 331,362" fill="#443A62"/>
+    <polygon points="150,150 181,150 331,362 300,362" fill="#9385BC"/>
+    <polygon points="181,150 212,150 362,362 331,362" fill="#7C6EAC"/>
+  </g>
+</svg>
