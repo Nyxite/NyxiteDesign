@@ -1,8 +1,8 @@
 # 01 — Design System
 
-The Nyxite design system. All concrete values live in [`../nyxite-tokens.json`](../nyxite-tokens.json) (v1.1.0); this document explains the structure, intent, and rules a client must follow when consuming them. Every value below is quoted from that file — if they diverge, the token file is authoritative.
+The Nyxite design system. All concrete values live in [`../nyxite-tokens.json`](../nyxite-tokens.json) (v1.1.1); this document explains the structure, intent, and rules a client must follow when consuming them. Every value below is quoted from that file — if they diverge, the token file is authoritative.
 
-Status: **[P]** — proposed; the Design direction is a backlog item in the central repo's `docs/OPEN-DECISIONS.md`.
+Status: **Ratified** (2026-07-11) — the design-system direction is resolved as cluster **DS-1–DS-3** in the central repo's `docs/OPEN-DECISIONS.md` (Resolved). Brand assets (logo/wordmark, iconography, illustration) remain open there.
 
 ---
 
@@ -25,7 +25,7 @@ The palette is layered so clients never hard-code hex in components — they ref
   - Lines: `border`, `borderStrong`, `gridLine`
   - Accent: `accent`, `accentHover`, `accentSoft`, `onAccent`, `focusRing`
   - The left **rail** has its own dark-on-light-theme tokens (`rail`, `railText`) — it stays dark in both themes as a persistent brand anchor.
-- **Status colors** — `success #10B981`, `warning #F59E0B`, `danger #E11D48`, `info #6D28D9`. Theme-independent.
+- **Status colors** — `success #10B981`, `warning #F59E0B`, `danger #E11D48`, `info #6366F1`. Theme-independent — each hue is chosen to clear WCAG AA for UI graphics (≥3:1) against both the light and dark surfaces; `info` is a distinct indigo (not the purple accent) so an info state never reads as an accent/hover highlight.
 - **Avatar colors** — a fixed 6-color rotation for user avatars/presence.
 
 **Theming rule:** components reference **only** semantic tokens; switching `light`↔`dark` swaps the semantic layer and nothing else. Web binds these to `:root` / `[data-theme="dark"]` custom properties; Android splits them across `values/` and `values-night/`.
@@ -53,11 +53,11 @@ Both families **must be bundled/self-hosted** by every client. **No client may f
 
 ## 5. Component catalog
 
-`components.*` in the token file specs ~50 components against the semantic tokens. Each entry pins sizing and the semantic roles it binds to (never raw hex). Groups:
+`components.*` in the token file specs 40 components against the semantic tokens. Each entry pins sizing and the semantic roles it binds to (never raw hex). Groups:
 
 - **Actions** — `button` (primary / secondary / ghost variants), `iconButton`, `fab`, `toolbarButton`, `railButton`, `stepper`.
 - **Inputs** — `input`, `dropdown`, `checkbox`, `radio`, `toggle`, `slider`, `segmentedControl`.
-- **Navigation & chrome** — `topBar`, `rail`, `sidebarItem`, `tab`, `breadcrumb`, `statusBar`, `bottomTabBar`, `mobileTopBar`, `drawer`, `formatStrip`.
+- **Navigation & chrome** — `topBar`, `rail`, `sidebarItem`, `tab`, `breadcrumb`, `statusBar`, `bottomTabBar`, `mobileTopBar`, `formatStrip`.
 - **Containers & overlays** — `card`, `dialog`, `drawer`, `tooltip`, `commandPalette`, `toast` (success / info / error), `emptyState`.
 - **Data & collaboration** — `table`, `chip`, `badge`, `avatar`, `commentThread`, `presence` (with online status dot), `kbd`, `progressLinear`, `progressCircular`, `skeleton`, `statusDot`.
 

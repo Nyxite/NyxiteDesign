@@ -1,6 +1,6 @@
-# Nyxite Design — Specification (v1.0.0)
+# Nyxite Design — Specification
 
-This folder is the written design-system specification for Nyxite — the visual language and cross-client UX conventions behind the tokens in [`../nyxite-tokens.json`](../nyxite-tokens.json).
+This folder is the written design-system specification for Nyxite — the visual language and cross-client UX conventions behind the tokens in [`../nyxite-tokens.json`](../nyxite-tokens.json) (v1.1.1). *(The token file carries its own semver, independent of the Nyxite product release, which is planned as v1.0.0.)*
 
 It expands the **"Design"** direction from the central [`Nyxite`](https://github.com/Nyxite/Nyxite) repo (`docs/OPEN-DECISIONS.md`, backlog: Design) into a concrete, buildable design-system spec, and documents the intent that the token file only encodes.
 
@@ -22,7 +22,7 @@ Nyxite is privacy-first and zero-knowledge. That reaches the design layer:
 
 ## Proposal convention
 
-- **[P]** — *Proposed.* A concrete decision filled in by this spec, subject to confirmation; not yet ratified in the master docs. The Design direction is still a backlog item in `docs/OPEN-DECISIONS.md`, so the system as a whole is **[P]** until ratified.
+- **[P]** — *Proposed.* A concrete decision filled in by this spec, subject to confirmation; not yet ratified in the master docs. The design **system** is now **ratified** (cluster **DS-1–DS-3**, resolved 2026-07-11, in `docs/OPEN-DECISIONS.md`); any remaining **[P]** marks apply only to still-open brand assets (logo/wordmark, iconography, illustration).
 
 ## Documents
 

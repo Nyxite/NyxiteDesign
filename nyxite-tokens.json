@@ -1,7 +1,7 @@
 {
   "$schema": "https://design-tokens.org/format",
   "name": "Nyxite",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Design tokens for Nyxite, a unified document/slides/sheets editor. Platform-agnostic; consumable from web (CSS vars), C#/.NET (Color.FromArgb hex), Android (colors.xml / Compose Color(0xFF...)). Colors are sRGB hex strings.",
   "meta": {
     "accentBrand": "Deep purple (#4C1D95) used as the primary frame, outline and selection color.",
@@ -94,7 +94,7 @@
       "success": "#10B981",
       "warning": "#F59E0B",
       "danger":  "#E11D48",
-      "info":    "#6D28D9"
+      "info":    "#6366F1"
     },
 
     "avatar": ["#10B981", "#F59E0B", "#4C1D95", "#0EA5E9", "#E11D48", "#6D28D9"]

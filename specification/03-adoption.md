@@ -2,7 +2,7 @@
 
 How the design system reaches **every** Nyxite UI to produce one coherent, user-friendly product, and the build mechanism that keeps the surfaces from drifting.
 
-Status: **[P]** — proposed; the project-wide adoption direction is recorded as Live decision **DS** in the central [`Nyxite` `docs/OPEN-DECISIONS.md`](https://github.com/Nyxite/Nyxite).
+Status: **Ratified** (2026-07-11) — the project-wide adoption direction is resolved as cluster **DS-1–DS-3** (Resolved) in the central [`Nyxite` `docs/OPEN-DECISIONS.md`](https://github.com/Nyxite/Nyxite). DS-3's concrete pipeline tooling is now resolved (2026-07-11) — a small in-repo Node generator at [`../tools/generate-tokens.mjs`](../tools/generate-tokens.mjs).
 
 ## Two layers of reach
 

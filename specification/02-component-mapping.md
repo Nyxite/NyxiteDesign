@@ -2,7 +2,7 @@
 
 How the design-system components in [`../nyxite-tokens.json`](../nyxite-tokens.json) (`components.*`) map onto the UI stack of each Nyxite surface. This is the build reference: for any component, it tells each client team whether their framework provides it or whether it must be built bespoke.
 
-Status: **[P]** — proposed.
+Status: **Ratified** (2026-07-11) — see cluster **DS-1–DS-3** (Resolved) in the central repo's `docs/OPEN-DECISIONS.md`.
 
 ## The UI stacks
 
@@ -31,6 +31,7 @@ Because Web, Admin, and (recommended) Support all share **React + shadcn/ui**, o
 | `slider` | `Slider` | `Slider` | `Slider` |
 | `dropdown` | `Select` / `DropdownMenu` | `ComboBox` / `Flyout` | `ExposedDropdownMenu` |
 | `tab` | `Tabs` | `TabControl` | `TabRow` / `Tab` |
+| `card` | `Card` | `Border` (styled `ControlTheme`) | `Card` |
 | `dialog` | `Dialog` | `Window` / overlay | custom `Dialog` |
 | `tooltip` | `Tooltip` | `ToolTip` | `PlainTooltip` |
 | `toast` | `Sonner` | `WindowNotificationManager` | `Snackbar` |

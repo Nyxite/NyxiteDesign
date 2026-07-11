@@ -10,10 +10,10 @@ This resolves the **"Design"** backlog item in the central [`Nyxite`](https://gi
 
 | File / folder | Role |
 |---|---|
-| [`nyxite-tokens.json`](nyxite-tokens.json) | **Source of truth.** Platform-agnostic design tokens (v1.1.0) — color palette + semantic light/dark themes, typography scale, spacing, radius, shadow, motion, and ~50 component specs. Every client derives its concrete styles from this file. |
+| [`nyxite-tokens.json`](nyxite-tokens.json) | **Source of truth.** Platform-agnostic design tokens (v1.1.1) — color palette + semantic light/dark themes, typography scale, spacing, radius, shadow, motion, and 40 component specs. Every client derives its concrete styles from this file. |
 | [`specification/`](specification/) | The written design-system specification — brand, themes, typography, layout, component catalog, and the responsive + toolbar-density model. Explains and pins the intent behind the tokens. |
 | `Nyxite.dc.html` | Interactive **app-shell prototype** — the rail (Document / Presentation / Spreadsheet) + top bar + switchable toolbar and canvas, with live theme and doc-type toggles. |
-| `Nyxite Components.dc.html` | **Component library** — a storybook of ~40 components rendered from the tokens. |
+| `Nyxite Components.dc.html` | **Component library** — a storybook of the 40 components rendered from the tokens. |
 | `NyxiteToolbar.dc.html` | The three toolbar densities: **classic** ribbon / **slim** / **minimal**. |
 | `NyxiteScreen.dc.html` | Full-screen **desktop / tablet / mobile** layouts. |
 | `Nyxite Responsive.dc.html` | Responsive preview with doc-type / toolbar / theme controls. |
