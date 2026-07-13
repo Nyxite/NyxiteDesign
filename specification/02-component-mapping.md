@@ -12,12 +12,12 @@ Status: **Ratified** (2026-07-11) — see cluster **DS-1–DS-3** (Resolved) in 
 | **NyxiteDesktop** | C# / .NET 9 | **Avalonia** (XAML); MVVM via CommunityToolkit.Mvvm / ReactiveUI | Avalonia built-in controls + custom `ControlTheme`s | `DynamicResource` brushes; `ThemeVariant` for light/dark |
 | **NyxiteWeb** | TypeScript | **Next.js / React** | **shadcn/ui** (Radix) + Tailwind | CSS custom properties → Tailwind theme |
 | **NyxiteAdmin** | TypeScript | **Next.js / React** | **shadcn/ui** (reuses the web stack) | same as web |
-| **NyxiteSupport** (operator UI) | TypeScript *(recommended — see [OPEN-DECISIONS DS](https://github.com/Nyxite/Nyxite))* | **SPA** | **React + shadcn/ui** (to inherit the web/admin library) | same as web |
+| **NyxiteSupport** (operator UI) | TypeScript *(pinned, DS-2 — see [OPEN-DECISIONS DS](https://github.com/Nyxite/Nyxite))* | **SPA** | **React + shadcn/ui** (to inherit the web/admin library) | same as web |
 | **NyxiteLicense** | — | issuance is email/manual | effectively no UI | — |
 
 > The desktop "React" in the specs refers to **ReactiveUI** (reactive MVVM), not React.js — desktop has no webview UI.
 
-Because Web, Admin, and (recommended) Support all share **React + shadcn/ui**, one implementation of a component serves three surfaces. Desktop (Avalonia) and Android (Compose) each need their own.
+Because Web, Admin, and Support (pinned, DS-2) all share **React + shadcn/ui**, one implementation of a component serves three surfaces. Desktop (Avalonia) and Android (Compose) each need their own.
 
 ## Standard components — library-provided in each stack
 

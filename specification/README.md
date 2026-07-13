@@ -22,7 +22,7 @@ Nyxite is privacy-first and zero-knowledge. That reaches the design layer:
 
 ## Proposal convention
 
-- **[P]** — *Proposed.* A concrete decision filled in by this spec, subject to confirmation; not yet ratified in the master docs. The design **system** is now **ratified** (cluster **DS-1–DS-3**, resolved 2026-07-11, in `docs/OPEN-DECISIONS.md`); any remaining **[P]** marks apply only to still-open brand assets (logo/wordmark, iconography, illustration).
+- **[P]** — *Proposed.* A concrete decision filled in by this spec, subject to confirmation; not yet ratified in the master docs. The design **system** is now **ratified** (cluster **DS-1–DS-3**, resolved 2026-07-11, in `docs/OPEN-DECISIONS.md`), and so are **iconography (Phosphor)** and the **empty-state pattern (typographic-only)**; any remaining **[P]** marks apply only to the still-open **wordmark/logotype** and the deferred **illustration set**.
 
 ## Documents
 

@@ -24,9 +24,9 @@ The system applies to all UIs, but in two layers that spread differently:
 
 **Shared language, distinct context.** Admin and Support share the design *language* (palette, type, components) but keep **contextually distinct layouts** — dense tables and forms, no rail/canvas — so an operator always knows they are in an admin context, not the editor.
 
-## Support operator UI — recommend React + shadcn/ui
+## Support operator UI — React + shadcn/ui (DS-2, pinned)
 
-The `NyxiteSupport` operator UI is specced as an SPA but its framework is not pinned. Building it in **React + shadcn/ui** (the web/admin stack) lets it **inherit the entire Layer-A component library at zero extra cost** and look native to the family. Any other stack means re-implementing the primitives by hand. Recorded as sub-decision **DS-2** in the central tracker.
+The `NyxiteSupport` operator UI is an SPA **pinned to React + shadcn/ui** (the web/admin stack) as sub-decision **DS-2** (resolved 2026-07-11). This lets it **inherit the entire Layer-A component library at zero extra cost** and look native to the family; any other stack would mean re-implementing the primitives by hand.
 
 ## Token build pipeline
 
@@ -43,7 +43,7 @@ Principles:
 - **Generated, never hand-edited.** The per-platform files are build outputs; editing a color means editing `nyxite-tokens.json` and regenerating.
 - **Runs in CI.** A drift check fails the build if a committed artifact does not match the tokens.
 - **Semantic layer only in components.** Components reference semantic tokens (`accent`, `chrome`, `textPrimary`, …), never palette hex, so theme switches swap one layer.
-- **Tooling location is open** — a small generator in this repo, or a shared tool (e.g. Style Dictionary). Tracked as sub-decision **DS-3**.
+- **Tooling is resolved (DS-3)** — a **small in-repo Node generator** at [`../tools/generate-tokens.mjs`](../tools/generate-tokens.mjs) (chosen over Style Dictionary), already built.
 
 ## What adoption does and does not buy
 
@@ -54,4 +54,4 @@ Principles:
 
 - **DS-1** — two-layer reach: Layer A across all UIs; Layer B on the three consumer clients only.
 - **DS-2** — `NyxiteSupport` operator SPA is built React + shadcn/ui to inherit the shared component library.
-- **DS-3** — a CI token build pipeline generates per-platform artifacts from `nyxite-tokens.json`; exact tooling TBD.
+- **DS-3** — a CI token build pipeline generates per-platform artifacts from `nyxite-tokens.json`; tooling resolved = a small in-repo Node generator (`../tools/generate-tokens.mjs`), not Style Dictionary.

@@ -2,7 +2,7 @@
 
 The Nyxite design system. All concrete values live in [`../nyxite-tokens.json`](../nyxite-tokens.json) (v1.1.1); this document explains the structure, intent, and rules a client must follow when consuming them. Every value below is quoted from that file — if they diverge, the token file is authoritative.
 
-Status: **Ratified** (2026-07-11) — the design-system direction is resolved as cluster **DS-1–DS-3** in the central repo's `docs/OPEN-DECISIONS.md` (Resolved). Brand assets (logo/wordmark, iconography, illustration) remain open there.
+Status: **Ratified** (2026-07-11) — the design-system direction is resolved as cluster **DS-1–DS-3** in the central repo's `docs/OPEN-DECISIONS.md` (Resolved). The **iconography set is resolved = Phosphor**, the **app-icon mark is resolved** (flat faceted "N"), and the **empty-state pattern is resolved = typographic-only**. Still open there: the **wordmark/logotype** and a richer **illustration set** (deferred).
 
 ---
 
@@ -96,7 +96,7 @@ From `platformHints` / `platformHints.notesOnUnits`:
 - **Android** — palette + `semantic.light` → `res/values/colors.xml`; `semantic.dark` → `res/values-night/colors.xml`; Compose `Color(0xFF…)` (prefix `#FF` for full opacity).
 - **Desktop (.NET)** — `Color.FromArgb` on the hex (strip `#`); scale dp/sp by DPI.
 
-A future build step may generate these per-platform artifacts directly from `nyxite-tokens.json` so the three clients never drift from the source of truth.
+A build step generates these per-platform artifacts directly from `nyxite-tokens.json` so the three clients never drift from the source of truth — resolved as **DS-3**: a small in-repo Node generator at [`../tools/generate-tokens.mjs`](../tools/generate-tokens.mjs) (not Style Dictionary).
 
 ## 9. Accessibility
 
@@ -109,8 +109,11 @@ A future build step may generate these per-platform artifacts directly from `nyx
 
 Tracked centrally in [`Nyxite` `docs/OPEN-DECISIONS.md`](https://github.com/Nyxite/Nyxite). Design-specific:
 
-- **Logo / wordmark** — no logo is defined yet; the rail currently shows only doc-type icons.
-- **Iconography** — the prototypes use inline stroke icons (1.6–1.8 stroke). Pin an icon set/library and stroke conventions, self-hosted like the fonts.
-- **Token build pipeline** — whether to generate per-platform token artifacts (CSS / `colors.xml` / C#) from `nyxite-tokens.json` in CI, and where that tool lives.
-- **Illustration & empty-state art** — style for `emptyState` and onboarding.
-- **Ratification** — moving Design from backlog to resolved in `docs/OPEN-DECISIONS.md`, recording this repo as the design-system component.
+- **Logo / wordmark** *(still open)* — the app-icon mark is resolved (flat faceted "N"), but a set **wordmark/logotype** is not yet pinned; the rail currently shows only doc-type icons. Direction variants under review.
+- **Illustration set** *(deferred, not open)* — a richer spot/abstract-geometric illustration set for onboarding is deliberately deferred; v1 empty states are typographic-only (see Resolved below).
+
+**Resolved (were open):**
+- **Iconography = Phosphor** — pinned icon set, self-hosted like the fonts (replaces the earlier inline-stroke placeholder). *(Resolved 2026-07-11.)*
+- **Empty-state = typographic-only** — `emptyState` uses a Phosphor icon + message + action, no illustration layer in v1. *(Resolved 2026-07-11.)*
+- **Token build pipeline = DS-3** — a small in-repo Node generator (`../tools/generate-tokens.mjs`) emits per-platform artifacts (CSS / `colors.xml` / C#) from `nyxite-tokens.json`. *(Resolved 2026-07-11.)*
+- **Ratification** — Design is resolved (cluster DS-1–DS-3) and this repo is recorded as the design-system component. *(Resolved 2026-07-11.)*
